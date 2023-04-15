@@ -293,6 +293,9 @@ a {
 
   margin-bottom: 8px;
 }
+.field-form:nth-child(4) {
+  margin-bottom: 16px;
+}
 .input-name {
   font-weight: 400;
   font-size: 12px;
@@ -320,6 +323,8 @@ a {
   letter-spacing: 0.04em;
 
   color: #8e8f99;
+
+  transition: border 250ms linear;
 }
 .input-icon {
   position: absolute;
@@ -328,12 +333,11 @@ a {
   transform: translateY(-50%);
 
   width: 18px;
-  height: 18px;
+  height: 24px;
 
   fill: var(--color-navy-blue);
-}
-.input:focus {
-  border: 1px solid #4d5ae5;
+
+  transition: fill 250ms linear;
 }
 .input-textarea {
   width: 100%;
@@ -351,6 +355,11 @@ a {
   letter-spacing: 0.04em;
 
   color: #8e8f99;
+
+  transition: border 250ms linear;
+}
+.input:focus {
+  border: 1px solid #4d5ae5;
 }
 .input:focus + .input-icon {
   fill: var(--color-iris);
@@ -366,7 +375,76 @@ a {
 .input-textarea:focus {
   border: 1px solid var(--color-iris);
 }
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.visually-hidden:checked + .icon {
+  background-color: var(--color-ocean);
+  border: 1.25px solid var(--color-ocean);
+}
+.visually-hidden:focus + .icon {
+  border: 1.25px solid var(--color-ocean);
+}
+.icon {
+  width: 16px;
+  height: 16px;
 
+  margin-right: 8px;
+
+  background-color: #fff;
+
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  background-origin: border-box;
+  fill: #fff;
+
+  transition: background-color 250ms linear , border 250ms linear;
+}
+
+.checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #757575;
+  margin-right: 4px;
+}
+.link-form {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+  color: #4D5AE5;
+
+  transition: color 250ms linear;
+}
+.link-form:is(:hover , :focus) {
+  color: var(--color-ocean);
+}
+
+.btn-form {
+min-width: 169px;
+padding: 16px 32px;
+margin: 0 auto;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: var(--color-iris);
+color: #FFFFFF;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+transition: background-color 250ms linear;
+}
+.btn-form:hover,
+.btn-form:focus {
+  background-color: var(--color-ocean);
+}
 /* section 2 */
 .quality {
   padding-bottom: 0;
@@ -660,6 +738,12 @@ a {
   background-color: var(--color-iris);
   color: var(--color-white);
   margin-left: 24px;
+
+  transition: background-color 250ms linear;
+}
+.sub-btn:hover,
+.sub-btn:focus {
+  background-color: var(--color-ocean);
 }
 .sub-icon {
   width: 24px;
