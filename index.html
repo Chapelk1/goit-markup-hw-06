@@ -398,19 +398,75 @@
             </li>
           </ul>
         </div>
-      </div>
-    </footer>
-          <!-- modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-close" data-modal-close>
-            <svg class="modal-icon">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-          </button>
+        <div class="sub">
+          <p class="foot-title">Subscribe</p>
+          <form class="sub-form">
+            <input
+              class="sub-input"
+              type="email"
+              placeholder="E-mail"
+              name="email-sub"
+            />
+            <button type="submit" class="sub-btn style-btn">
+              Subscribe
+              <svg class="sub-icon">
+                <use href="./images/icons.svg#icon-sms"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
-      <!-- script -->
+    </footer>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="title-modal">Leave your contacts and we will call you back</p>
+
+        <form class="form-modal">
+          <label class="field-form">
+            <span class="input-name">Name</span> 
+            <span class="input-wrap">
+              <input class="input" type="name" name="name" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="field-form">
+            <span class="input-name">Phone</span> 
+            <span class="input-wrap">
+              <input class="input" type="tel" name="tel" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="field-form">
+            <span class="input-name">Email</span> 
+            <span class="input-wrap">
+              <input class="input" type="email" name="email" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="field-form">
+            <span class="input-name">Comment</span> 
+              <textarea class="input-textarea"  name="comment" placeholder="Text input"></textarea>
+          </label>
+        </form>
+      </div>
+    </div>
+    <!-- script -->
     <script src="./modal.js"></script>
   </body>
 </html>
