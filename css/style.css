@@ -395,6 +395,7 @@ a {
 
   background-color: #fff;
 
+  cursor: pointer;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
   background-origin: border-box;
